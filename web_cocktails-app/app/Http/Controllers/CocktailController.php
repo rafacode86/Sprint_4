@@ -15,7 +15,7 @@ class CocktailController extends Controller
     public function index()
     {
         $cocktails = Cocktail::paginate();
-        return view("cocktails.index", compact("cocktails"));
+        return view("index", compact("cocktails"));
     }
 
     /**
@@ -23,7 +23,7 @@ class CocktailController extends Controller
      */
     public function create()
     {
-        //
+        return view("cocktails.create");
     }
 
     /**
@@ -31,7 +31,7 @@ class CocktailController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -39,7 +39,7 @@ class CocktailController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
     }
 
     /**
